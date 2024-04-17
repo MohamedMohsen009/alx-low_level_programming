@@ -24,18 +24,16 @@ void puts_half(char *str)
 			putchar(str[n]);
 			n++;
 		}
-		putchar('\n');
 	}
 	else
 	{
 		n = (length - 1) / 2;
 		n = length - n;
 
-		while (length > n)
+		while (length >= n)
 		{
 			putchar(str[n + 1]);
 			n++;
 		}
-		putchar('\n');
 	}
 }
