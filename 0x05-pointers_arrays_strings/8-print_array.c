@@ -15,7 +15,7 @@ void print_array(int *a, int n)
 	{
 		length++;
 	}
-	if (n <= length - 1)
+	if (n < length)
 	{
 		for (index = 0; index <= n; index++)
 		{
