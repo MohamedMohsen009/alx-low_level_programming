@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _strncat - concatenates two strings.
- * @dest: string 1.
- * @src: string 2.
+ * @dest: string number one.
+ * @src: string number two.
  * @n: number of bytes.
  * Return: a pointer to dest.
  */
