@@ -20,7 +20,7 @@ char *cap_string(char *str)
 		}
 		else if (str[i] == ',' || str[i] == '\n' || str[i] == '\t'
 			 || str[i] == ';' ||
-			 str[i] == '.' || str[i] == 32 || str[i] == '!' ||
+			 str[i] == '.' || str[i] == ' ' || str[i] == '!' ||
 			 str[i] == '?' || str[i] == '"' || str[i] == '(' ||
 			 str[i] == ')' || str[i] == '{' || str[i] == '}')
 		{
