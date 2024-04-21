@@ -13,12 +13,15 @@ char *cap_string(char *str)
 	s = 0;
 	while (str[i] != '\0')
 	{
-		if (s == 1 && str[i] >= 'a' && str[i] <= 'z')
+		if (s && str[i] >= 'a' && str[i] <= 'z')
 		{
-			str[i] = str[i] - 32;
+			str[i] -= 32;
 			s = 0;
 		}
-		else if (str[i] == ',' || str[i] == '\t' || str[i] == ';' || str[i] == '.' || str[i] == 32 || str[i] == '!' || str[i] == '?' || str[i] == '"' || str[i] == '(' || str[i] == ')' || str[i] == '{' || str[i] == '}')
+		else if (str[i] == ',' || str[i] == '\n' || str[i] == '\t' || str[i] == ';' ||
+			 str[i] == '.' || str[i] == 32 || str[i] == '!' ||
+			 str[i] == '?' || str[i] == '"' || str[i] == '(' ||
+			 str[i] == ')' || str[i] == '{' || str[i] == '}')
 		{
 			s = 1;
 		}
