@@ -19,6 +19,7 @@ int is_palindrome(char *s)
  * is_palindrome_helper - check if a string is palindrome.
  * @s: a string to check.
  * @i: an index.
+ * @length: length of string s.
  *
  * Return: 1 if palindrome and 0 if not.
  */
