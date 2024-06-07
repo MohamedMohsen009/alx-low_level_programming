@@ -17,7 +17,7 @@ int helper_sqrt(int n, int i)
 	{
 		return (i);
 	}
-	return helper_sqrt(n, i + 1);
+	return (helper_sqrt(n, i + 1));
 }
 /**
  * _sqrt_recursion - Returns the natural square root of a number.
