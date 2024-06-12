@@ -11,26 +11,28 @@
 int main(int argc, char *argv[])
 {
 	int result;
+	char *tmp;
 
 	result = 0;
 	if (argc <= 1)
 	{
 		printf ("%d\n", 0);
-		return (0);
+		return (1);
 	}
 	while (argc--)
 	{
 		if (argc > 0)
 		{
-			if (isdigit(*argv[argc]))
+			for (tmp = argv[argc]; *tmp != '\0'; tmp++)
 			{
-				result += atoi(argv[argc]);
+
+				if (!isdigit(*tmp))
+				{
+					printf("%s\n", "Error");
+					return (1);
+				}
 			}
-			else
-			{
-				printf("%s\n", "Error");
-				return (0);
-			}
+			result += atoi(argv[argc]);
 		}
 	}
 	printf("%d\n", result);
