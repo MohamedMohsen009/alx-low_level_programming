@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <ctype.h>
 /**
  * main - entry point of the program.
  * @argc: count of the arguments.
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	{
 		if (argc > 0)
 		{
-			if (atoi(argv[argc]) != 0)
+			if (isdigit(*argv[argc]))
 			{
 				result += atoi(argv[argc]);
 			}
