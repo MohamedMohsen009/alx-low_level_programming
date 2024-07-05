@@ -6,7 +6,7 @@
  * @age: the age of the dog.
  * @owner: the name of the owner.
  *
- * @Description: a struct that holds the data of the dog and its owner.
+ * Description: a struct that holds the data of the dog and its owner.
  */
 struct dog
 {
