@@ -8,10 +8,10 @@
  *
  * @Description: a struct that holds the data of the dog and its owner.
  */
-struct dog
+typedef struct
 {
 	char *name;
 	float age;
 	char *owner;
-};
+} dog;
 #endif
