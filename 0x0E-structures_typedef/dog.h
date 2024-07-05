@@ -1,5 +1,5 @@
-#ifndef MAIN_HEADER_FILE
-#define MAIN_HEADER_FILE
+#ifndef DOG_H
+#define DOG_H
 /**
  * struct dog - a structure that holds data about the dog owner.
  * @name: the name of the dog.
